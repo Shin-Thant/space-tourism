@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Navbar } from "../../components/navbar/Navbar";
 import { useNavigate } from "react-router";
 
 import "./home.css";
@@ -14,6 +12,8 @@ export const HomePage = () => {
     useEffect(() => {
         dispatch(changeActiveLink(1));
         dispatch(changeBg("bg-home"));
+
+        // eslint-disable-next-line
     }, []);
 
     const clickHandler = () => {

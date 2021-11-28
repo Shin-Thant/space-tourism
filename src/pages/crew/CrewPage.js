@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { getCrewData } from "../../redux/actions/crewAction";
 import { changeActiveLink, changeBg } from "../../redux/actions/navbarAction";
 
@@ -21,6 +20,8 @@ export const CrewPage = () => {
         dispatch(getCrewData());
         dispatch(changeActiveLink(3));
         dispatch(changeBg("bg-crew"));
+
+        // eslint-disable-next-line
     }, []);
 
     const allCrews = [crew1, crew2, crew3, crew4];

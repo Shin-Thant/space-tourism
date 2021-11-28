@@ -6,7 +6,6 @@ import { CrewPage } from "./pages/crew/CrewPage";
 import { TechnologyPage } from "./pages/technology/TechnologyPage";
 import { Navbar } from "./components/navbar/Navbar";
 import { HomePage } from "./pages/home/HomePage";
-import { useState } from "react";
 import { useSelector } from "react-redux";
 
 function App() {

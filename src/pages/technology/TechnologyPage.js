@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getTechData } from "../../redux/actions/techAction";
 import { changeActiveLink, changeBg } from "../../redux/actions/navbarAction";
@@ -24,6 +23,8 @@ export const TechnologyPage = () => {
         dispatch(getTechData());
         dispatch(changeActiveLink(4));
         dispatch(changeBg("bg-technology"));
+
+        // eslint-disable-next-line
     }, []);
 
     const techPortrait = [vechicle, spaceport, capsule];

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getDestiData } from "../../redux/actions/destinationAction";
 import "./destination.css";
@@ -22,6 +21,8 @@ export const DestinationPage = () => {
         dispatch(getDestiData());
         dispatch(changeActiveLink(2));
         dispatch(changeBg("bg-destination"));
+
+        // eslint-disable-next-line
     }, []);
 
     desti.length > 0 && console.log(desti, desti[0].name);
