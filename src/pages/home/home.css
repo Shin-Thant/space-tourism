@@ -2,6 +2,8 @@
     width: 100%;
     min-height: 100vh;
     padding-top: 10vh;
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-size: cover;
 }
 
 .home-main {
@@ -68,6 +70,11 @@
 }
 
 @media screen and (max-width: 850px) {
+    .home-container {
+        background-image: url("../../assets/home/background-home-tablet.jpg");
+        background-size: cover;
+    }
+
     .home-head {
         margin: 0.8rem 0;
     }
@@ -105,6 +112,13 @@
 @media screen and (max-width: 550px) {
     .home-head {
         font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-container {
+        background-image: url("../../assets/home/background-home-mobile.jpg");
+        background-size: cover;
     }
 }
 

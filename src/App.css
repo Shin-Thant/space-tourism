@@ -1,10 +1,8 @@
 .main-container {
-    /* background-image: url("./assets/home/background-home-desktop.jpg");
-    background-size: cover; */
     position: relative;
 }
 
-.bg-home {
+/* .bg-home {
     background-image: url("./assets/home/background-home-desktop.jpg");
     background-size: cover;
 }
@@ -60,4 +58,4 @@
         background-image: url("./assets/technology/background-technology-mobile.jpg");
         background-size: cover;
     }
-}
+} */

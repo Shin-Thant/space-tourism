@@ -2,6 +2,8 @@
     width: 100%;
     min-height: 100vh;
     padding-top: 20vh;
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
 }
 
 .crew-main {
@@ -105,6 +107,8 @@
 @media screen and (max-width: 850px) {
     .crew-container {
         padding-top: 18vh;
+        background-image: url("../../assets/crew/background-crew-tablet.jpg");
+        background-size: cover;
     }
 
     .crew-main {
@@ -132,6 +136,11 @@
 }
 
 @media screen and (max-width: 500px) {
+    .crew-container {
+        background-image: url("../../assets/crew/background-crew-mobile.jpg");
+        background-size: cover;
+    }
+
     .crew-img {
         margin-top: 4.5rem;
     }

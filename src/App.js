@@ -13,15 +13,13 @@ function App() {
 
     return (
         <Router>
-            <div className={`main-container ${bg}`}>
-                <Navbar />
-                <Routes>
-                    <Route path="/" exact element={<HomePage />} />
-                    <Route path="/destination" element={<DestinationPage />} />
-                    <Route path="/crew" element={<CrewPage />} />
-                    <Route path="/technology" element={<TechnologyPage />} />
-                </Routes>
-            </div>
+            <Navbar />
+            <Routes>
+                <Route path="/" exact element={<HomePage />} />
+                <Route path="/destination" element={<DestinationPage />} />
+                <Route path="/crew" element={<CrewPage />} />
+                <Route path="/technology" element={<TechnologyPage />} />
+            </Routes>
         </Router>
     );
 }

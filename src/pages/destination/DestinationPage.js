@@ -15,7 +15,6 @@ export const DestinationPage = () => {
     const { desti } = useSelector((state) => state.desti);
 
     let image = desti.length ? desti[0].images.png : "";
-    console.log(image);
 
     useEffect(() => {
         dispatch(getDestiData());
