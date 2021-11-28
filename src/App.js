@@ -6,10 +6,9 @@ import { CrewPage } from "./pages/crew/CrewPage";
 import { TechnologyPage } from "./pages/technology/TechnologyPage";
 import { Navbar } from "./components/navbar/Navbar";
 import { HomePage } from "./pages/home/HomePage";
-import { useSelector } from "react-redux";
 
 function App() {
-    const { bg } = useSelector((state) => state.bg);
+    // const { bg } = useSelector((state) => state.bg);
 
     return (
         <Router>

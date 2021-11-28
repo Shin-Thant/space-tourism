@@ -14,8 +14,6 @@ export const DestinationPage = () => {
 
     const { desti } = useSelector((state) => state.desti);
 
-    let image = desti.length ? desti[0].images.png : "";
-
     useEffect(() => {
         dispatch(getDestiData());
         dispatch(changeActiveLink(2));
@@ -23,8 +21,6 @@ export const DestinationPage = () => {
 
         // eslint-disable-next-line
     }, []);
-
-    desti.length > 0 && console.log(desti, desti[0].name);
 
     const destinations = [moon, mars, europa, titan];
 
